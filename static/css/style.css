@@ -1,0 +1,174 @@
+
+/* :root - Selector especial utilizado para definir variables personalizadas de CSS que se pueden reutilizar en todo el documento. */
+:root {
+    --bg-color: #cdc8c8;
+    /* Color de fondo */
+    --primary-color: #365e9f;
+    --secondary-color: #98d1ff;
+    --third-color: #46a9db;
+    --third-bis-color: #4650dbf2;
+    --bg-input-color: #4f31572c;
+}
+
+/* body {
+    background-color: var(--bg-color);
+    color: white;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Eliminar la decoración de los hipervínculos: */
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-weight: bold;
+}
+
+#logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Animación de logo al pasar el mouse - Investigar otras transformaciones */
+#logo:hover {
+    animation: tilt-n-move-shaking 0.5s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+#nombre {
+    background-image: url('../img/BannerFirma.jpeg');
+    background-size: cover;
+    /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
+    background-position: center;
+    /* coloca la imagen en el centro tanto horizontal como vertical del elemento contenedor */
+    height: 300px;
+    box-shadow: inset 0 0 0 2000px rgba(34, 34, 34, 0.5) 
+    /* establece una sombra interna actúa como un filtro. */
+}
+
+#footer {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+/* Estilo para el footer para cuando se pasa el mouse */
+#footer a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+/* Estilo para el footer */
+#footer{
+    align-items: center;
+    background-color: var(--bg-input-color);
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.header {
+    background-color: var(--secondary-color);
+    color: var(--bg-input-color);
+    position: fixed;
+    /* Se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, lo que significa que el elemento permanece en la misma posición, incluso cuando se desplaza la página. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    /* Se utiliza comúnmente en situaciones donde tienes elementos superpuestos, como menús desplegables, ventanas emergentes, elementos flotantes, etc. Al ajustar el z-index, puedes controlar qué elementos aparecen en la parte superior y cuáles quedan ocultos detrás de otros. */
+}
+
+
+/* Estilo para la tarjeta del banner */
+.container-nombre {
+    color: white;
+    margin: 80px auto;
+    /* Se utiliza comúnmente para centrar horizontalmente un elemento dentro de su contenedor. */
+    text-align: center;
+    padding: 2 160px;
+    /* Aplica un relleno de cero píxeles en la parte superior e inferior del elemento y un relleno de 160 píxeles en los lados izquierdo y derecho. */
+}
+
+.container-nombre h1 {
+    font-size: 4vw;
+    margin-top: 20px;
+}
+
+.container-nombre h2 {
+    margin-bottom: 20px;
+}
+
+.container-nombre h3 {
+    margin-bottom: 20px;
+}
+
+/* Style the top navigation bar */
+.nav-links {
+    display: flex;
+    background-color: var(--bg-color);
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.main {
+    flex: 70%;
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 20px;
+}
+
+
+@media (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column; /*Cambio de horizontal a vertical en ambas clases*/
+    }
+}
