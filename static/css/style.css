@@ -1,8 +1,6 @@
 
-/* :root - Selector especial utilizado para definir variables personalizadas de CSS que se pueden reutilizar en todo el documento. */
 :root {
-    --bg-color: #cdc8c8;
-    /* Color de fondo */
+    --bg-color: #6f6f70;
     --primary-color: #365e9f;
     --secondary-color: #98d1ff;
     --third-color: #46a9db;
@@ -10,10 +8,10 @@
     --bg-input-color: #4f31572c;
 }
 
-/* body {
+body {
     background-color: var(--bg-color);
     color: white;
-} */
+}
 
 * {
     margin: 0;
@@ -66,30 +64,12 @@ a {
 #nombre {
     background-image: url('../img/BannerFirma.jpeg');
     background-size: cover;
-    /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
     background-position: center;
-    /* coloca la imagen en el centro tanto horizontal como vertical del elemento contenedor */
     height: 300px;
-    box-shadow: inset 0 0 0 2000px rgba(34, 34, 34, 0.5) 
-    /* establece una sombra interna actúa como un filtro. */
+    /* box-shadow: inset 0 0 0 2000px #cce8f380; */
 }
 
 #footer {
-    color: var(--primary-color);
-    cursor: pointer;
-    font-size: 14px;
-    padding-left: 30px;
-    text-decoration: none;
-}
-
-/* Estilo para el footer para cuando se pasa el mouse */
-#footer a:hover {
-    text-decoration: underline;
-    color: var(--secondary-color);
-}
-
-/* Estilo para el footer */
-#footer{
     align-items: center;
     background-color: var(--bg-input-color);
     display: flex;
@@ -97,27 +77,50 @@ a {
     width: 100%;
 }
 
+#footer a {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+
 .header {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     color: var(--bg-input-color);
     position: fixed;
-    /* Se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, lo que significa que el elemento permanece en la misma posición, incluso cuando se desplaza la página. */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
-    /* Se utiliza comúnmente en situaciones donde tienes elementos superpuestos, como menús desplegables, ventanas emergentes, elementos flotantes, etc. Al ajustar el z-index, puedes controlar qué elementos aparecen en la parte superior y cuáles quedan ocultos detrás de otros. */
 }
 
+.btn-contacto {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+}
 
-/* Estilo para la tarjeta del banner */
+.btn-contacto:hover {
+    color: var(--secondary color) !important;
+    border: 2px solid var(--secondary-color);
+}
+
 .container-nombre {
-    color: white;
-    margin: 80px auto;
-    /* Se utiliza comúnmente para centrar horizontalmente un elemento dentro de su contenedor. */
+    color: #FFF;
+    margin: auto;
     text-align: center;
     padding: 2 160px;
-    /* Aplica un relleno de cero píxeles en la parte superior e inferior del elemento y un relleno de 160 píxeles en los lados izquierdo y derecho. */
+    max-width: 1200px;
 }
 
 .container-nombre h1 {
@@ -140,6 +143,11 @@ a {
     color: white;
     text-decoration: none;
     padding: 14px 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav-links a:hover {
