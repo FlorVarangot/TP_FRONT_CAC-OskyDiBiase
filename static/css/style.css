@@ -84,14 +84,92 @@ a {
     padding: 8px;
     padding: 14px 16px;
 }
+/* CLASES PARA LA BIOGRAFIA */
+.bio-box{
+    display: flex;
+    margin: 4rem;
+    padding: 2rem;
+}
 
+.bio-artist img{
+    float: left;
+    max-width: 400px;
+    width: 100%;
+    margin-right: 3rem;
+}
 
-#footer {
-    align-items: center;
+.bio-artist h2,
+.bio-obra h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.bio-artist p,
+.bio-obra p,
+.bio-obra h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.bio-obra img{
+    float: right;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 3rem;
+}
+
+.bio-obras{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    'Img1 Img2 Img2 Img2'
+    'Img1 Img3 Img3 Img4'
+    'Img1 Img5 Img6 Img6';
+    grid-gap: 2rem;
+    padding: 5rem;
+    max-width: 200vh;
+}
+
+.bio-obras .img1{
+    grid-area: Img1;
+}
+.bio-obras .img2{
+    grid-area: Img2;
+}
+.bio-obras .img3{
+    grid-area: Img3;
+}
+.bio-obras .img4{
+    grid-area: Img4;
+}
+.bio-obras .img5{
+    grid-area: Img5;
+}
+.bio-obras .img6{
+    grid-area: Img6;
+}
+
+.bio-obras .bio-item{
+    position: relative;
+    background-color: #f7f4f4;
+}
+
+.bio-obras .bio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* top: 0;
+    left: 0;
+    position: absolute; */
+}
+
+#footer{
     background-color: var(--bg-input-color);
     display: flex;
     height: 100px;
     width: 100%;
+    justify-content: center;
 }
 
 #footer a {
