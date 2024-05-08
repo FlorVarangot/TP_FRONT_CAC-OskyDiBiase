@@ -1,16 +1,39 @@
 
-:root {
+/* :root {
     --bg-color: #000000;
     --primary-color: #365e9f;
     --secondary-color: #98d1ff;
     --third-color: #46a9db;
     --third-bis-color: #4650dbf2;
     --bg-input-color: #4f31572c;
+} */
+
+/* Sugerencia de paleta de colores (Flor)*/
+:root {
+    --bg-color: #202020; /* Un gris oscuro para el fondo que evoca el asfalto y los escenarios de conciertos */
+    --primary-color: #d1d1d1; /* Un gris claro para textos y elementos que necesiten contraste */
+    --secondary-color: #e63946; /* Un rojo intenso para acentos que representen la pasión del rock */
+    --third-color: #f1faee; /* Un blanco roto para fondos de secciones o tarjetas */
+    --accent-color: #a8dadc; /* Un turquesa claro para detalles y hover effects que recuerden los reflejos del vidrio */
+    --bg-input-color: #2a9d8f; /* Un verde azulado para inputs que aporte un toque de frescura y originalidad */
 }
 
 body {
     background-color: var(--bg-color);
     color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4, h5, p, a {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* 
@@ -30,8 +53,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 } */
 
-a {
-    text-decoration: none;
+section {
+    margin: 5px, 0, 5px, 0;
+    padding-top: 5px;
 }
 
 @keyframes tilt-n-move-shaking {
@@ -59,7 +83,7 @@ a {
 .header{
     border: 3px solid rgb(113, 245, 25);
     display: flex;
-    background-color: black;
+    background-color: var(--bg-color);
     width: 100%;
     position: fixed;
     top: 0;
@@ -73,28 +97,26 @@ a {
 
 .nav-links{
     text-decoration: none;
-    /* background-color: transparent; */
 }
 
 .nav-links ul{  
     margin-right: 0;
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
     list-style-type: none;
     margin-top: 15px;
     text-align: right;
     background-color: transparent;
-    
 }
 
 .nav-links ul li{
     display:inline-block;
-    border-right: 1px solid #bbb;
+    border-right: 1px solid var(--third-color);
 }
 
 .nav-links li a {
     text-decoration: none;
     display: block;
-    color: white;
+    color: var(--primary-color);
     padding: 8px;
     padding: 14px 16px;
 }
@@ -106,7 +128,6 @@ a {
 
 .nav-links li:hover {
     color: var(--secondary-color);
-    background-color: #9fe917;
 }
 
 .flexbox-container {
@@ -125,28 +146,30 @@ a {
 }
 
 .fakeimg {
+    padding-top: 10px;
     background-color: var(--bg-color);
     width: 100%;
     z-index: 9999;
+    height: fit-content;
 }
 
 .btn-contacto {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     padding: 10px;
     border-radius: 10px;
-    color: #FFF;
+    color: var(--bg-color);
     cursor: pointer;
     text-decoration: none;
 }
 
 .btn-contacto:hover {
     color: var(--secondary color) !important;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
 }
 
 /* Estilo para la tarjeta del banner */
 .container-nombre {
-    color: #FFF;
+    color: var(--third-color);
     margin: 5px auto;
     text-align: center;
     padding: 2 160px;
@@ -254,7 +277,6 @@ a {
     position: absolute; */
 }
 
-
 /* Contenedor principal de la prensa. */
 .container-prensa {
     display: flex;
@@ -271,7 +293,7 @@ a {
     object-fit: cover;
 }
     
-    /* estilo de la carta de noticias indidividual */
+/* estilo de la carta de noticias indidividual */
 .card {
     display: flex;
     margin-left:1%;
@@ -279,19 +301,17 @@ a {
     flex-direction: column;
     width: clamp(10rem, calc(30% + 2vw), 22rem);
     overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    background: #ECE9E6;
+    box-shadow: 0.16px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
     background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-
 }
 
 /* estilo body de la card */
 .card__body {
-    padding: 1rem;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 8px;
 }
 
 .tag {
@@ -324,19 +344,19 @@ a {
 } */
   
 .card__body h4 {
-    font-size: 1.5rem;
+    font-size: 24px;
     text-transform: capitalize;
 }
   
 .card__footer {
     display: flex;
-    padding: 1rem;
+    padding: 16px;
     margin-top: auto;
 }
   
 .user {
     display: flex;
-    gap: .5rem;
+    gap: 8px;
 }
   
 .user__image {
@@ -352,13 +372,14 @@ a {
     .main-prensa{
         flex: 70%;
         background-color: var(--bg-color);
+        padding-top: 10px;
     }
 
     .body-prensa{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
     }
 
-    article.tarjeta{
+    .tarjeta{
         max-width: 350px;
         background-color: var(--bg-input-color);
         border-radius: 8px;
@@ -451,13 +472,20 @@ a {
     cursor: pointer;
     font-size: 14px;
     padding-left: 30px;
-    text-decoration: none;
 }
 
 #header img {
     height: 20px;
     width: auto;
     border-radius: 50%;
+}
+
+#logo img{
+    padding: 5px;
+    display: flex;
+    border-radius: 50%;
+    height: 60px;
+    cursor: pointer;
 }
 
 #logo:hover {
@@ -469,12 +497,11 @@ a {
     border: 3px solid blue;
     background-image: url('../img/BannerFirma.jpeg');
     background-size: contain;
-    background-repeat: no-repeat;
     background-color: transparent;
     background-position: center;
-    height: 220px;
+    height: 215px;
     box-shadow: inset 0 0 0 2000px rgba(34, 34, 34, 0.5);
-    margin-top: 50px;
+    margin: 50px, 0, 50px, 0;
     justify-content: center;
 }
 
@@ -488,8 +515,8 @@ a {
 
 #sobre-mi{
     text-align: left;
-    background-color: #f7f4f4;
-    border: 3px solid #0f0f0f;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
     margin: 10px;
     padding: 20px;
 }
