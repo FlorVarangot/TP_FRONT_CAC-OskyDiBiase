@@ -430,20 +430,26 @@ section {
         padding-bottom: 10px;
         text-align: center;
         margin: 0 auto;
-        background-color: var(--primary-color)
+        background-color: var(--accent-color)
     }
     
-    .footer-prensa img{
+    .footer-prensa p{
+        color: var(--third-color);
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    .footer-prensa i{
         display: inline-block;
         vertical-align: middle;
-        width: 25px;
+        width: 20px;
         height: auto;
         cursor: pointer;
     }
     
     .footer-prensa ul{
         list-style: none;
-        padding-top: 10px;
+        padding-top: 20px;
     }
     
     .footer-prensa li{
@@ -455,6 +461,7 @@ section {
     
     .footer-prensa a {
         margin-left: 10px;
+        text-decoration: none;
     }
     
 /* --------- FIN CSS PRENSA.HTML --------- */
