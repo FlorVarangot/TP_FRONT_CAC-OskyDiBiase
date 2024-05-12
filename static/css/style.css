@@ -85,7 +85,8 @@ section {
     display: flex;
     background-color: var(--bg-color);
     width: 100%;
-    position: fixed;
+    position: sticky;
+    z-index: 100;
     top: 0;
     left: 0;
 }
@@ -93,6 +94,7 @@ section {
 .navbar{
     background-color: transparent;
     width: 100%;
+    place-content: center;
 }
 
 .nav-links{
@@ -103,7 +105,6 @@ section {
     margin-right: 0;
     color: var(--primary-color);
     list-style-type: none;
-    margin-top: 15px;
     text-align: right;
     background-color: transparent;
 }
@@ -192,7 +193,7 @@ section {
 /* CLASES PARA LA BIOGRAFIA */
 .bio-box{
     display: flex;
-    margin: 4rem;
+    margin: 1rem 4rem;
     padding: 2rem;
 }
 
@@ -200,24 +201,34 @@ section {
     float: left;
     max-width: 400px;
     width: 100%;
-    margin-right: 3rem;
+    margin: 0 2.5rem 1.25rem 0;
 }
 
-.bio-artist h2, .bio-obra h2{
+.bio-artist h2, .bio-obra h3{
     font-size: 5rem;
     margin-bottom: 2rem;
 }
 
-.bio-artist p, .bio-obra p, .bio-obra h3{
+.bio-artist p, .bio-obra p, .bio-obra h4{
     font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+
+.bio-obra{
+    flex-direction: column;
+}
+
+.bio-obra h2{
+    text-align: center;
+    font-size: 5rem;
+    padding:0 0 1.5rem 0;
 }
 
 .bio-obra img{
     float: right;
     max-width: 400px;
     width: 100%;
-    margin-left: 3rem;
+    margin: 0 0 1.25rem 2.5rem;
 }
 
 /* estilo de imagen de bio */
@@ -235,7 +246,7 @@ section {
     'Img1 Img3 Img3 Img4'
     'Img1 Img5 Img6 Img6';
     grid-gap: 2rem;
-    padding: 5rem;
+    padding: 2rem 5rem;
     max-width: 200vh;
 }
 
@@ -263,6 +274,17 @@ section {
     grid-area: Img6;
 }
 
+.bio-text{
+    position: absolute;
+    color: var(--primary-color);
+    background-color: #0f0e0e41;
+    padding: 0.5rem;
+
+    left: 10px;
+    top: 10px;
+    font-size: 2rem;
+}
+
 .bio-obras .bio-item{
     position: relative;
     background-color: #f7f4f4;
@@ -276,6 +298,25 @@ section {
     left: 0;
     position: absolute; */
 }
+
+/*BIOFRAFIA - boton para llevar al portfolio  */
+.bio-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bio-btn a{
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    border: 0.25rem solid var(--primary-color);
+}
+
 
 /* Contenedor principal de la prensa. */
 .container-prensa {

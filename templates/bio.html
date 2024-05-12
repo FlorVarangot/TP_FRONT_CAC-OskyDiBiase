@@ -21,19 +21,23 @@
 
 <body>
     <!-- ENCABEZADO -->
-    <header>
-        <nav>
-            <!-- Logo -->
-            <div>
-                <a href="#"><span>OSKY DI BIASE</span></a>
+    <header class="header">     
+        <!-- Logo -->  
+            <div id="logo" style="height:fit-content">        
+                <img src="../static/img/imglogo" alt="imglogo">
             </div>
-            <!-- Hipervinculos -->
-            <ul>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./prensa.html">Prensa</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar">
+                <div class="nav-links">
+                <!-- Hipervinculos -->
+                    <ul>                    
+                        <li><a href="../templates/portfolio.html">Portfolio</a></li> 
+                        <li><a href="../templates/bio.html">Sobre mí</a></li> 
+                        <li><a href="../templates/prensa.html">Prensa</a></li>
+                        <li><a href="../templates/contacto.html">Contacto</a></li> 
+                    </ul> 
+                </div>
         </nav>
     </header>
 
@@ -50,54 +54,63 @@
                 <p>Biografía, nació en, desde chico tal cosa, estudió en, le interesa tal cosa...Lorem, ipsum dolor sit amet consectetur adipisicing elit. At libero cum optio dolorum error saepe perferendis voluptatibus impedit ullam blanditiis, consequuntur repellat quasi tempora necessitatibus eaque odio facilis culpa vitae laboriosam modi? Nostrum, necessitatibus blanditiis debitis hic laudantium cumque assumenda ipsa! Labore vero architecto alias quod excepturi odit. Exercitationem odio veritatis ut voluptatem temporibus nesciunt similique, praesentium cumque perspiciatis consectetur reiciendis, libero aut sint soluta dicta architecto. Dolores, beatae porro error quae quidem laboriosam aperiam natus cumque, deserunt eum, fugit magni voluptates totam iste corporis. Enim fuga facere cupiditate molestiae. Neque hic tenetur laudantium nemo voluptate ad sunt voluptatum odio culpa quas quis, eligendi necessitatibus ratione distinctio ipsa, et asperiores autem id sed reiciendis illo numquam molestiae commodi iste! Recusandae, libero eum officiis corrupti repudiandae porro error sapiente! Reiciendis accusantium hic deleniti autem, quae quaerat ab labore magni magnam sit enim molestias ducimus totam eius officia impedit asperiores obcaecati cupiditate?</p>
             </div>
         </section>
-        <br>
 
-        <!-- Sobre su ultima obra hecha -->
+        <!-- Sobre su obra reciente -->
         <section class="bio-obra | bio-box">
+            <h2>Obra reciente</h2>
             <div>
                 <!-- Foto / Video haciendo obra -->
                 <img src="http://picsum.photos/301" alt="imagen">
                 <!-- Sobre su arte -->
-                <h2>Titulo</h2>
-                <h3>Lugar / año</h3>
+                <h3>Titulo</h3>
+                <h4>Lugar / año</h4>
                 <p>Inspiración, técnicas, colaboraciones, etc.Lorem, ipsum dolor sit amet consectetur adipisicing elit. At libero cum optio dolorum error saepe perferendis voluptatibus impedit ullam blanditiis, consequuntur repellat quasi tempora necessitatibus eaque odio facilis culpa vitae laboriosam modi? Nostrum, necessitatibus blanditiis debitis hic laudantium cumque assumenda ipsa! Labore vero architecto alias quod excepturi odit. Exercitationem odio veritatis ut voluptatem temporibus nesciunt similique, praesentium cumque perspiciatis consectetur reiciendis, libero aut sint soluta dicta architecto. Dolores, beatae porro error quae quidem laboriosam aperiam natus cumque,</p>
                 
             </div>
         </section>
-        <br>
 
         <!-- Obras que realizo -->
         <section class="bio-obras">
             <div class="bio-item img1">
                 <!-- Obra-->
                 <img src="http://picsum.photos/302" alt="imagen">
+                <div class="bio-text">Titulo<br> Año</div>
             </div>
             <div class="bio-item img2">
                 <!-- Obra-->
                 <img src="http://picsum.photos/303" alt="imagen">
+                <div class="bio-text">Titulo<br> Año</div>
             </div>
             <div class="bio-item img3">
                 <!-- Obra-->
                 <img src="http://picsum.photos/304" alt="imagen">
+                <div class="bio-text">Titulo<br> Año</div>
             </div>
             <div class="bio-item img4">
                 <!-- Obra-->
                 <img src="http://picsum.photos/305" alt="imagen">
+                <div class="bio-text">Titulo<br> Año</div>
             </div>
             <div class="bio-item img5">
                 <!-- Obra-->
                 <img src="http://picsum.photos/306" alt="imagen">
+                <div class="bio-text">Titulo<br> Año</div>
             </div>
             <div class="bio-item img6">
                 <!-- Obra-->
                 <img src="http://picsum.photos/307" alt="imagen">
+                <div class="bio-text">Titulo<br> Año</div>
             </div>
-        </section
-        >
+        </section>
+
+        <!-- Link hacia su portfolio -->
+        <div class="bio-btn">
+            <a href="portfolio.html">Ver todas sus obras</a>
+        </div>
 
         <!-- Contacto -->
         <section>
-            <a href="./contacto.html">Contactame</a>
+            <a class="btn-contacto" href="./contacto.html">Contactame</a>
         </section>
         <br><br>
 
