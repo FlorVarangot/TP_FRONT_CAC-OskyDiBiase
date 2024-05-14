@@ -666,3 +666,33 @@ section {
         flex-direction: column; /*Cambio de horizontal a vertical en ambas clases*/
     }
 }
+
+/*Estilos Contacto ----- */
+/* Caja entera */
+#form-wrapper{
+    text-align: center;
+    background-color: #000000;
+    color:rgb(0, 0, 0);
+    text-decoration:solid;
+    font-size: 20px;
+    padding: 10px 10px;
+    
+}
+/* Cada titulo de elemento */
+.tituloContacto{
+    outline: none;
+    border: 2px solid rgb(76, 153, 41);
+    padding: 0px 20px;
+    width: 30%;
+    background-color: #f0f0f0d3;
+    border-radius: 20px;
+}
+/* fondo de la caja */
+#cajaContacto{
+    background-image: url(/static/img/Contacto/1.jpg), 
+                      url(/static/img/Contacto/2.jpg,), 
+                      url(/static/img/Contacto/3.jpg,),
+                      url(/static/img/Contacto/4.jpg,);
+    border-radius: 2000px;
+    border-color: #2a9d8f;
+}
