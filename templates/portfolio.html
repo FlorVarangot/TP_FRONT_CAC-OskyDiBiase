@@ -5,96 +5,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-
     <!-- CSS Externo -->
-
+    <link rel="stylesheet" href="../static/css/style.css">
     <!-- Favicon -->
-    
-    <!-- Font awesome -->
+    <link rel="icon" href="../static/img/OskyFavicon.ico">
+
+    <script src="https://kit.fontawesome.com/9255801f03.js" crossorigin="anonymous"></script>
+
 
     <title>OSKY DI BIASE - Portfolio</title>
 
 </head>
 
 <body>
-    <!-- ENCABEZADO 
-    <header>
-        
-    </header>
-    -->
+    <!-- ENCABEZADO-->
+    <header class="header">
+        <!-- NAVEGACION PRINCIPAL -->
+        <a href="../index.html">
+            <div id="logo" style="height:fit-content">        
+              <img src="../static/img/imglogo" alt="imglogo">
+           </div>
+        </a>
+        <nav class="navbar">
+            <div class="nav-links">
+             <!-- Hipervinculos -->
+                <ul>                    
+                   <li><a href="./templates/bio.html">Sobre mí</a></li> 
+                   <li><a href="./templates/prensa.html">Prensa</a></li>
+                   <li><a href="./templates/contacto.html">Contacto</a></li> 
+                </ul> 
+            </div>
+        </nav>
 
-    <!-- NAVEGACION PRINCIPAL -->
-    <nav id="nav">
-        <!-- Logo -->
-        <div>
-            <a href="/"><span>OSKY DI BIASE</span></a>
-        </div>
-        
-        <!-- Hipervinculos -->
-        <ul class="menu">
-            <li>
-                <a href="./bio.html">Sobre mí</a>
-            </li>
-            <li>
-                <a href="./prensa.html">Prensa</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    </header>
 
     <!-- MAIN -->
     <main>
         <!-- Trabajos -->
-        <section>
-            <h1>Portfolio</h1>
-            <!-- Murales -->
-            <div>
-                <h2>Murales</h2>
-                <li><img src="http://picsum.photos/107" alt="imagen"></li>
-                <li><img src="http://picsum.photos/108" alt="imagen"></li>
-                <li><img src="http://picsum.photos/109" alt="imagen"></li>
-            </div>
-            
-            <!-- Cuadros -->
-            <div>
-                <h2>Cuadros</h2>
-                <li><img src="http://picsum.photos/110" alt="imagen"></li>
-                <li><img src="http://picsum.photos/111" alt="imagen"></li>
-                <li><img src="http://picsum.photos/112" alt="imagen"></li>
-            </div>
 
-            <!-- Otros -->
-            <div>
-                <h2>Otras creaciones</h2>
-                <li><img src="http://picsum.photos/113" alt="imagen"></li>
-                <li><img src="http://picsum.photos/114" alt="imagen"></li>
-                <li><img src="http://picsum.photos/115" alt="imagen"></li>
+        <!-- Comienza la seccion de galeria -->
+        <section id="galeria">
+
+            <!-- flexbox container general de la galeria. -->
+            <div class="flexbox-container-galeria">
+                <!-- Titulo -->
+                <div id="banner-galeria">
+                    <h1 id="titulo-portfolio">Portfolio</h1>
+                </div>
+
+                <!-- Subtitulo Murales -->
+                <h2 class="banner-subtitulos-portfolio">MURALES</h2>
+
+                <!-- Flex general de murales -->
+                <div class="container-categorias">
+                    <!-- Clase contenedora de imagen -->
+                    <ul class="list-imagen-obra">
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-M-Te_Vere_Volver.jpg" alt="imagen">
+                                <!-- Clase flex descripcion murales. -->
+                                <h1 class="titulo-obra">"Te veré volver"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <!-- Repite estructura por cada imagen -->
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-M-Ojos_de_diamante.png" alt="imagen">
+                                <h1 class="titulo-obra">"Ojos de Diamante"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-M-Al-Maestro.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Al Maestro"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-M-La_hija_del_rock.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"La hija del Rock"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-M-Nuestra_Señora_de_Fatima.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Nuestra Señora de Fátima"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-M-Vuelta_Al_Universo.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Vuelta al Universo"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Categoria cuadros -->
+                <h2 class="banner-subtitulos-portfolio">CUADROS</h2>
+                <!-- Flex general de cuadros -->
+                <div class="container-categorias">
+                    <!-- Clase contenedora de imagen -->
+                    <ul class="list-imagen-obra">
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-.jpg" alt="imagen">
+                                <!-- Clase flex descripcion murales. -->
+                                <h1 class="titulo-obra">Mouras</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <!-- Repite estructura por cada imagen -->
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-Jinete_en_su_tormenta.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Jinete en su tormenta"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-Alma_de_diamante.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Alma de diamante"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-Mouras.jpg" alt="imagen">
+                                <h1 class="titulo-obra">Mouras</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-Rubber-Soul.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Rubber Soul"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-Un_Tal_Julio.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Un tal Julio"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Otros -->
+                <h2 class="banner-subtitulos-portfolio">OTRAS CREACIONES</h2>
+                <div class="container-categorias">
+                    <!-- Clase contenedora de imagen -->
+                    <ul class="list-imagen-obra">
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="/static/img/Porfolio-C-Tus_ojos_nunca_mentiran.jpg" alt="imagen">
+                                <!-- Clase flex descripcion murales. -->
+                                <h1 class="titulo-obra">"Tus ojos nunca mentirían"</h1>
+                                <h1 class="descripcion-murales">Mouras</h1>
+                            </div>
+                        </li>
+                        <!-- Repite estructura por cada imagen -->
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-Ojos_de_video_tape.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Ojos de video tape"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-El_ojo_que_mira_al_magma.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"El ojo que mira al magma"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Porfolio-C-El_ojo_blindado.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"El ojo blindado"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Portfolio-C-Ojos_de_ciudad.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Ojos de ciudad"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="marco-imagen-obra">
+                                <img src="../static/img/Portfolio-C-Los_ojos-ciegos_bien_abiertos.jpg" alt="imagen">
+                                <h1 class="titulo-obra">"Los ojos ciegos bien abiertos"</h1>
+                                <p class="descripcion-murales">Técnica: Mosaiquismo y pintura en acrílico.<br>
+                                    Medidas: 60 x 45 centímetros </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
             </div>
         </section>
-        <br>
 
-        <!-- Contacto -->
-        <section>
+       <!-- Contacto -->
+        <section id="contacto">
             <h1>Contacto</h1>
             <p>Si querés contactarme por contrataciones, presupuestos, o consultas, no dudes en hacerlo!</p>
-            <a href="./contacto.html">Escribime ahora</a>
+            <br>
+            <a href="./templates/contacto.html">Escribime</a>
         </section>
-        <br><br>
-        
+
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <!-- Redes -->
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">X</a>
-        <a href="">YouTube</a>
+        <div class="footer-prensa">
+            <p><b>© 2024 Osky Di Biase</b></p>
+            <p><b>Todos los derechos reservados.</b></p>
+            <ul>
+                <li>
+                    <img src="https://logodix.com/logo/737898.png" alt="Telefono">
+                    <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.9_ZXseiaB1tgYquikdl68AHaFj?rs=1&pid=ImgDetMain" alt="Instagram">
+                    <a href="" target="_blank">@oskydibiasearte</a>
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.g8oGbyvNBF5oRYTmy-kfpwHaHa?rs=1&pid=ImgDetMain" alt="Facebook">
+                    <a href="" target="_blank">/oskydibiasearte</a>
+                </li>
+                <li>
+                    <img src="https://affinityne.com/wp-content/uploads/2021/01/Footer_Email-1.png" alt="correo">
+                    <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
+                </li>
+            </ul>
+        </div>
     </footer>
-
+   
 </body>
 
 </html>

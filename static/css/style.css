@@ -18,24 +18,10 @@
     --bg-input-color: #2a9d8f; /* Un verde azulado para inputs que aporte un toque de frescura y originalidad */
 }
 
-html {
-    font-size: 14px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
-  }
-  
-
 body {
     background-color: var(--bg-color);
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
 }
 
 h1, h2, h3 {
@@ -48,13 +34,17 @@ h4, h5, p, a {
 
 a {
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-div, h2, p, figure{
-    margin: 0;
-    padding: 0;
-}
+/* 
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+} */
 
 * {
     margin: 0;
@@ -91,11 +81,11 @@ section {
 }
 
 .header{
+    border: 3px solid rgb(113, 245, 25);
     display: flex;
     background-color: var(--bg-color);
     width: 100%;
-    position: sticky;
-    z-index: 100;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -103,7 +93,6 @@ section {
 .navbar{
     background-color: transparent;
     width: 100%;
-    place-content: center;
 }
 
 .nav-links{
@@ -113,7 +102,8 @@ section {
 .nav-links ul{  
     margin-right: 0;
     color: var(--primary-color);
-    list-style-type: none;
+    list-style-type:none;
+    margin-top: 15px;
     text-align: right;
     background-color: transparent;
 }
@@ -202,7 +192,7 @@ section {
 /* CLASES PARA LA BIOGRAFIA */
 .bio-box{
     display: flex;
-    margin: 1rem 4rem;
+    margin: 4rem;
     padding: 2rem;
 }
 
@@ -210,34 +200,24 @@ section {
     float: left;
     max-width: 400px;
     width: 100%;
-    margin: 0 2.5rem 1.25rem 0;
+    margin-right: 3rem;
 }
 
-.bio-artist h2, .bio-obra h3{
+.bio-artist h2, .bio-obra h2{
     font-size: 5rem;
     margin-bottom: 2rem;
 }
 
-.bio-artist p, .bio-obra p, .bio-obra h4{
+.bio-artist p, .bio-obra p, .bio-obra h3{
     font-size: 1.2rem;
     margin-bottom: 1rem;
-}
-
-.bio-obra{
-    flex-direction: column;
-}
-
-.bio-obra h2{
-    text-align: center;
-    font-size: 5rem;
-    padding:0 0 1.5rem 0;
 }
 
 .bio-obra img{
     float: right;
     max-width: 400px;
     width: 100%;
-    margin: 0 0 1.25rem 2.5rem;
+    margin-left: 3rem;
 }
 
 /* estilo de imagen de bio */
@@ -255,7 +235,7 @@ section {
     'Img1 Img3 Img3 Img4'
     'Img1 Img5 Img6 Img6';
     grid-gap: 2rem;
-    padding: 2rem 5rem;
+    padding: 5rem;
     max-width: 200vh;
 }
 
@@ -283,17 +263,6 @@ section {
     grid-area: Img6;
 }
 
-.bio-text{
-    position: absolute;
-    color: var(--primary-color);
-    background-color: #0f0e0e41;
-    padding: 0.5rem;
-
-    left: 10px;
-    top: 10px;
-    font-size: 2rem;
-}
-
 .bio-obras .bio-item{
     position: relative;
     background-color: #f7f4f4;
@@ -307,25 +276,6 @@ section {
     left: 0;
     position: absolute; */
 }
-
-/*BIOFRAFIA - boton para llevar al portfolio  */
-.bio-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.bio-btn a{
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--primary-color);
-    border-radius: 2rem;
-    padding: 1rem;
-    font-size: 2rem;
-    border: 0.25rem solid var(--primary-color);
-}
-
 
 /* Contenedor principal de la prensa. */
 .container-prensa {
@@ -419,124 +369,57 @@ section {
 
 
 /* ---------- CSS PARA PRENSA.HTML ---------- */
+    .main-prensa{
+        flex: 70%;
+        background-color: var(--bg-color);
+        padding-top: 10px;
+    }
+
+    .body-prensa{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
+    }
+
+    .tarjeta{
+        max-width: 350px;
+        background-color: var(--bg-input-color);
+        border-radius: 8px;
+        margin: 16px;
+        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+        align-items: center;
+    }
+
+    .tarjeta-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-tarjeta img{
+        border-radius: 8px 8px 0 0;
+        max-height: 200px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .tarjeta footer{
+        padding: 0 16px;
+    }
+
+    .tarjeta:hover {
+        box-shadow: 0px 0px 12px #d7d7d7;
+    }
     
+    .link-tarjeta{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        padding: 10px;
+    }
 
-.header-p2 {
-    color: white;
-    padding: 40px 0 20px;
-    text-align: center;
-  }
-  
-  .header-p2 h1 {
-    font-size: 50px;
-    font-weight: bold;
-  }
-  
-  .main-prensa {
-    margin: 0 auto;
-    max-width: 1040px;
-    padding: 10px;
-  }
-  
-  .columna-prensa {
-    flex: 1;
-    flex-direction: column;
-  }
-  
-  .article-p {
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    color: #666;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-basis: auto;
-    margin: 10px;
-  }
-  
-  .article-p:hover{
-    box-shadow: 0 10px 20px var(--primary-color), 0 10px 10px var(--third-color);
-    color: var(--bg-color);
-  }
-  
-  .article-image-p {
-    background: #eee;
-    display: block;
-    padding-top: 75%;
-    position: relative;
-    width: 100%;
-  }
-  
-  .article-image-p img {
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  
-  .article-image-p, .img1 {
-    padding-top: 66.6666%;
-  }
-  
-  .article-image-p, .img2 {
-    padding-top: 56.25%;
-  }
-  
-  .article-body-p {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .article-title-p {
-    color: #333;
-    flex-shrink: 0;
-    font-size: 1.4em;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  
-  .article-content-p {
-    flex: 1;
-    margin-top: 5px;
-    padding-bottom: 10px;
-  }
-  
-  .article-content-video {
-    flex: 1;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    text-align: center;
-  }
-  
-  .article-info-p {
-    display: flex;
-    font-size: 0.85em;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .video-container2, .contacto-container, .video-iframe{
-    max-width: 1200px;
-    padding: 20px;
-    padding-bottom: 50px;
-    margin: 12px auto;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .video-iframe{
-    background-color:var(--bg-input-color)
-  }
-  
-  .contacto-prensa{
-    display: flex;
-    margin: auto;
-    padding: 20px;
+    .contacto-prensa, .contacto-prensa div{
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     .footer-prensa {
@@ -547,26 +430,20 @@ section {
         padding-bottom: 10px;
         text-align: center;
         margin: 0 auto;
-        background-color: var(--accent-color)
+        background-color: var(--primary-color)
     }
     
-    .footer-prensa p{
-        color: var(--third-color);
-        font-style: italic;
-        font-size: 14px;
-    }
-
-    .footer-prensa i{
+    .footer-prensa img{
         display: inline-block;
         vertical-align: middle;
-        width: 20px;
+        width: 25px;
         height: auto;
         cursor: pointer;
     }
     
     .footer-prensa ul{
         list-style: none;
-        padding-top: 20px;
+        padding-top: 10px;
     }
     
     .footer-prensa li{
@@ -578,41 +455,7 @@ section {
     
     .footer-prensa a {
         margin-left: 10px;
-        text-decoration: none;
     }
-
-  
-  @media screen and (min-width: 800px) {
-    .columnas-prensa,
-    .columna-prensa {
-      display: flex;
-    }
-  }
-  
-  @media screen and (min-width: 1000px) {
-    .primer-article {
-      flex-direction: row;
-    }
-  
-    .primer-article .article-body-p {
-      flex: 1;
-    }
-  
-    .primer-article .article-image-p {
-      height: 300px;
-      order: 2;
-      padding-top: 0;
-      width: 400px;
-    }
-  
-    .main-columna {
-      flex: 3;
-    }
-  
-    .nested {
-      flex: 2;
-    }
-  }
     
 /* --------- FIN CSS PRENSA.HTML --------- */
 
@@ -733,6 +576,177 @@ section {
     justify-content: center;
 }
 
+/* ESTILOS PAGINA PORTFOLIO (LEO) */
+/* INICIO */
+/* Flex general de toda la galeria completa */
+.flexbox-container-galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    background-color: black;
+    /* border: 3px solid rgb(187, 27, 94); */
+    padding-top: 20px;
+    justify-content: center;
+
+}
+#banner-galeria{
+
+    background-color: var(--bg-input-color);
+    border: 4px solid rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    background-image:url('../img/imglogo.jpeg');   
+    background-size: contain;
+    height: 400px;
+    width: 700px; 
+}
+#banner-galeria h1{
+    font-size: 400%;
+    text-align: center;
+    text-shadow: 4px 4px 5px #0005;
+}
+/* Estilo de subtitulos que separan las categorias "murales" cuadros otros */
+.banner-subtitulos-portfolio{
+    max-width: 80%;
+    width: 80%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    font-size: large;
+    background-image: url("..//img/fondo-ceramico-negro.jpg");
+    text-align: center;
+    margin: 20px;
+    text-shadow: 4px 4px 5px #0005;
+}
+.flexbox-container-galeria h2{
+
+    text-align: center;
+    font-size: 200%;
+
+}
+
+.container-categorias{
+
+    width: 100%;
+  /*  border: 4px solid rgb(50, 165, 218);
+   /* padding: 5px 5px 5px 5px;    */
+}
+.list-imagen-obra {
+    gap: 8px;
+    padding: 16px;
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+/* Estilo de la caja que contiene foto  */
+.marco-imagen-obra{
+
+    padding: 5px 5px 15px 5px;
+    /* border: 1px solid rgb(171, 241, 5); */
+    margin: 5px;
+
+
+}
+.titulo-obra{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #666;
+    width: 98%;
+    padding: 2px;
+    font-size: 16px;
+    box-shadow:  5px 5px #aeb0bd44;
+}
+
+/* Estilo del texto en la descripcion foto  */
+.descripcion-murales{
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 12px;
+    background-color: whitesmoke;
+    /* border-radius: 50%; */
+    padding: 5px 5px 5px 5px;
+    margin-top: 3px;
+    color: #0f0f0f;
+    text-align: center;
+    box-shadow:  5px 5px #aeb0bd44;
+}
+
+.marco-imagen-obra img{
+    width: 250px ;
+    height:  250px;
+    object-fit:cover;
+    border: 5px solid white;
+    margin-right: 5px ; 
+    box-shadow:  5px 5px #aeb0bd44;
+}
+
+.marco-imagen-obra img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05);
+    transform: rotate(-1.2deg)scale(1.05);
+    transition: 0.6s ease-out;
+    filter: grayscale(0.9);
+}
+
+div.desactivado {
+    transition: width 2s ease 0s, height 2s ease 0s, transform 2s ease 0s;
+    width: 420px;
+    left: 20px;
+    transform: rotateX(68.182deg) rotateY(3.384deg) rotateZ(54.8214deg) scale(0.2) translate(51%, -298%);
+}
+div.desactivado:hover{
+	opacity: 0.5;
+}
+div.activado{
+	width: 420px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+	position:relative;
+	-webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+	transform: rotateX(0) rotateY(0) rotateZ(0);
+	left: 0px;
+}
+div.activado .boton {
+    border: 3px solid #F00;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    width: 20%;
+    height: 8%;
+    background-color: transparent;
+}
+div.activado .boton:hover {
+    border: 3px solid #0F0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN GALERIA (LEO) */
+
+
+
 /* Estilo para el footer para cuando se pasa el mouse */
 /* #footer a:hover {
     text-decoration: underline;
@@ -741,12 +755,15 @@ section {
 
 /* Estilo para el footer */
 #footer{
-/* align-items: center;
+/* 
     background-color: var(--bg-input-color);
-    display: flex;
+   
     height: 100px;
     width: 100%; */
 
+    display: flex;
+    border: 3px solid blue;
+    align-items: center;
     padding: 35px 0;
 }
 
@@ -755,6 +772,7 @@ section {
     border-bottom:  1px solid rgb(78, 190, 218);
     padding: 0 0 30px;
     margin: 0 0 30px;
+    justify-content: center;
 }
 
 #footer .social{
@@ -770,38 +788,9 @@ section {
 }
 
 @media (max-width: 700px) {
+    .flexbox-container-galeria,
     .row,
     .navbar {
         flex-direction: column; /*Cambio de horizontal a vertical en ambas clases*/
     }
-}
-
-/*Estilos Contacto ----- */
-/* Caja entera */
-#form-wrapper{
-    text-align: center;
-    background-color: #000000;
-    color:rgb(0, 0, 0);
-    text-decoration:solid;
-    font-size: 20px;
-    padding: 10px 10px;
-    
-}
-/* Cada titulo de elemento */
-.tituloContacto{
-    outline: none;
-    border: 2px solid rgb(76, 153, 41);
-    padding: 0px 20px;
-    width: 30%;
-    background-color: #f0f0f0d3;
-    border-radius: 20px;
-}
-/* fondo de la caja */
-#cajaContacto{
-    background-image: url(/static/img/Contacto/1.jpg), 
-                      url(/static/img/Contacto/2.jpg,), 
-                      url(/static/img/Contacto/3.jpg,),
-                      url(/static/img/Contacto/4.jpg,);
-    border-radius: 2000px;
-    border-color: #2a9d8f;
 }
