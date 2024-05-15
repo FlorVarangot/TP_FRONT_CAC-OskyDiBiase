@@ -597,7 +597,7 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
-    background-image:url('../img/imglogo.jpeg');   
+    background-image:url('../img/Galeria/BannerInicio-VER1.png');   
     background-size: contain;
     height: 400px;
     width: 700px; 
@@ -615,7 +615,7 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;    
     font-size: large;
-    background-image: url("..//img/fondo-ceramico-negro.jpg");
+    background-image: url("..//img/Galeria/fondo-ceramico-negro.jpg");
     text-align: center;
     margin: 20px;
     text-shadow: 4px 4px 5px #0005;
@@ -696,39 +696,6 @@ section {
     transition: 0.6s ease-out;
     filter: grayscale(0.9);
 }
-
-div.desactivado {
-    transition: width 2s ease 0s, height 2s ease 0s, transform 2s ease 0s;
-    width: 420px;
-    left: 20px;
-    transform: rotateX(68.182deg) rotateY(3.384deg) rotateZ(54.8214deg) scale(0.2) translate(51%, -298%);
-}
-div.desactivado:hover{
-	opacity: 0.5;
-}
-div.activado{
-	width: 420px;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, transform 2s;
-	position:relative;
-	-webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-	transform: rotateX(0) rotateY(0) rotateZ(0);
-	left: 0px;
-}
-div.activado .boton {
-    border: 3px solid #F00;
-    position: absolute;
-    top: 48%;
-    left: 5%;
-    width: 20%;
-    height: 8%;
-    background-color: transparent;
-}
-div.activado .boton:hover {
-    border: 3px solid #0F0;
-
-}
-
 
 
 
