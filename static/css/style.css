@@ -55,8 +55,9 @@ div, h2, p, figure{
 } */
 
 section {
-    margin: 5px, 0, 5px, 0;
+    margin: 5px, 0, 10px, 0;
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 @keyframes tilt-n-move-shaking {
@@ -136,9 +137,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    align-items: center;
     background-color: var(--primary-color);
-    border: 3px solid blue;
-    padding-top: 60px;
 }
 
 .main {
@@ -155,10 +155,16 @@ section {
     height: fit-content;
 }
 
+.container-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
 .btn-contacto {
     background-color: var(--accent-color);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--bg-color);
     cursor: pointer;
     text-decoration: none;
@@ -412,9 +418,9 @@ section {
     
 
 .header-p2 {
-    color: white;
-    padding: 40px 0 20px;
-    text-align: center;
+color: white;
+padding: 40px 0 20px;
+text-align: center;
 }
   
 .header-p2 h1 {
@@ -520,38 +526,38 @@ font-size: 20px;
 }
 
 .video-iframe{
-    background-color: var(--secondary-color)
+background-color: var(--secondary-color)
 }
 
 .contacto-prensa{
-    display: flex;
-    margin: auto;
-    padding: 20px;
+display: flex;
+margin: auto;
+padding: 20px;
 }
 
 .footer-prensa {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: var(--accent-color)
+bottom: 0;
+left: 0;
+right: 0;
+padding-top: 20px;
+padding-bottom: 10px;
+text-align: center;
+margin: 0 auto;
+background-color: var(--accent-color)
 }
 
 .footer-prensa p{
-    color: var(--third-color);
-    font-style: italic;
-    font-size: 14px;
+color: var(--third-color);
+font-style: italic;
+font-size: 14px;
 }
 
 .footer-prensa i{
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: auto;
-    cursor: pointer;
+display: inline-block;
+vertical-align: middle;
+width: 20px;
+height: auto;
+cursor: pointer;
 }
 
 .footer-prensa ul{
@@ -641,7 +647,6 @@ font-size: 20px;
 
 #nombre {
     display: flex;
-    border: 3px solid blue;
     background-image: url('../img/BannerFirma.jpeg');
     background-size: contain;
     background-color: transparent;

@@ -14,6 +14,7 @@ function validarFormulario() {
     }
 }
 
+
 //   Imagenes caja contacto
 document.addEventListener('DOMContentLoaded', function() {
     var cajaContacto = document.getElementById('cajaContacto');
