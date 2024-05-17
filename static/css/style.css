@@ -784,7 +784,7 @@ cursor: pointer;
 /* Cada titulo de elemento */
 .tituloContacto{
     outline: none;
-    border: 2px solid rgb(76, 153, 41);
+    border: 2px solid rgb(0, 0, 0);
     padding: 0px 20px;
     width: 30%;
     background-color: #f0f0f0d3;
@@ -797,7 +797,7 @@ cursor: pointer;
                       url(/static/img/Contacto/3.jpg,),
                       url(/static/img/Contacto/4.jpg,);
     border-radius: 2000px;
-    border-color: #2a9d8f;
+    border-color: #0baa98;
 }
 
 /* ESTILOS PAGINA PORTFOLIO (LEO) */
