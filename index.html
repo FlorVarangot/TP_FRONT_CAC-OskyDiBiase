@@ -94,7 +94,7 @@
             <!-- Trabajos / Portfolio -->
             <section id="portfolio">
               <div>
-                <h1 class="banner-subtitulos-portfolio">PORTFOLIO</h1>
+                <div><h1 class="banner-subtitulos-portfolio">PORTFOLIO</h1></div>
                 <div id="lista-portfolio">
                   <a href="./static/img/Galeria/Porfolio-M-La_hija_del_rock.jpg" target="_blank">
                     <img src="./static/img/Galeria/Porfolio-M-La_hija_del_rock.jpg" alt="La hija del rock" width="100" height="100">
@@ -219,47 +219,43 @@
             <!-- Contacto -->
             <h1 class="banner-subtitulos-portfolio">CONTACTO</h1>
             <section id="contacto">
+                <div id="imagen-logo-contacto" class="fakeimg">
+                  <img src="/static/img/imglogo.jpg" alt="imagen">
+                </div>
               <p>Si querés contactarme por consultas, presupuestos o contrataciones</p>
               <p>¡no dudes en hacerlo!</p>
-              <br>
-              <a href="./templates/contacto.html">Escribime</a>
+              <button class="btn-contacto">
+                <a href="./templates/contacto.html" style="font-size:large; color: white;" >Escribime!</a>
+              </button>
             </section>
-            <br>
-    </div>
+          </div>
 </main>
-
-    <!-- PIE DE PÁGINA --> 
-<footer id="footer">
-  <div>
-    <div>
-      <p><b>© 2024 Osky Di Biase</b></p>
-      <p><b>Todos los derechos reservados.</b></p>
-      <br>  
-    </div>
-    <hr>
-    <div class="content">
-      <ul class="social">
-        <li>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
-        </li>
-        <li>
-            <i class="fa-brands fa-instagram"></i>
-            <a href="https://www.instagram.com/oskydibiasearte/" target="_blank">@oskydibiasearte</a>
-        </li>
-        <li>
-            <i class="fa-brands fa-facebook-f"></i>
-            <a href="https://www.facebook.com/osky.dibiase/" target="_blank">/oskydibiasearte</a>
-        </li>
-        <li>
-            <i class="fa-regular fa-envelope"></i>
-            <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
-        </li>
-      </ul>  
-    </div>
-  </div>
-</footer>
-
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div class="footer-prensa">
+          <p><b>© 2024 Osky Di Biase</b></p>
+          <p><b>Todos los derechos reservados.</b></p>
+          <ul>
+              <li>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
+              </li>
+              <li>
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.instagram.com/oskydibiasearte/" target="_blank">@oskydibiasearte</a>
+              </li>
+              <li>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <a href="https://www.facebook.com/osky.dibiase/" target="_blank">/oskydibiasearte</a>
+              </li>
+              <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
+              </li>
+          </ul>
+      </div>
+    </footer>
 </body>
+    
 
 </html>
