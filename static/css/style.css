@@ -198,17 +198,11 @@ section {
 }
 
 /* CLASES PARA LA BIOGRAFIA */
-.bio-box{
-    display: flex;
+.bio-box,
+.bio-artist div{
+    display: flow-root;
     margin: 1rem 4rem;
     padding: 2rem;
-}
-
-.bio-artist img{
-    float: left;
-    max-width: 400px;
-    width: 100%;
-    margin: 0 2.5rem 1.25rem 0;
 }
 
 .bio-artist h2, .bio-obra h3{
@@ -216,8 +210,8 @@ section {
     margin-bottom: 2rem;
 }
 
-.bio-artist p, .bio-obra p, .bio-obra h4{
-    font-size: 1.2rem;
+.bio-artist p, .bio-obra p{
+    font-size: 1.65rem;
     margin-bottom: 1rem;
 }
 
@@ -231,11 +225,19 @@ section {
     padding:0 0 1.5rem 0;
 }
 
-.bio-obra img{
+.bio-obra img,
+.b-imgRight{
     float: right;
     max-width: 400px;
     width: 100%;
     margin: 0 0 1.25rem 2.5rem;
+}
+
+.b-imgLeft{
+    float: left;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 1.25rem 0.25rem 0 ;
 }
 
 /* estilo de imagen de bio */
@@ -246,50 +248,39 @@ section {
 
 .bio-obras{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
     grid-template-areas: 
-    'Img1 Img2 Img2 Img2'
-    'Img1 Img3 Img3 Img4'
-    'Img1 Img5 Img6 Img6';
+    'b-img1 b-img2 b-img2 b-img2'
+    'b-img1 b-img3 b-img3 b-img4'
+    'b-img1 b-img5 b-img6 b-img6';
     grid-gap: 2rem;
     padding: 2rem 5rem;
     max-width: 200vh;
 }
 
-.bio-obras .img1{
-    grid-area: Img1;
+.bio-obras .b-img1{
+    grid-area: b-img1;
 }
 
-.bio-obras .img2{
-    grid-area: Img2;
+.bio-obras .b-img2{
+    grid-area: b-img2;
 }
 
-.bio-obras .img3{
-    grid-area: Img3;
+.bio-obras .b-img3{
+    grid-area: b-img3;
 }
 
-.bio-obras .img4{
-    grid-area: Img4;
+.bio-obras .b-img4{
+    grid-area: b-img4;
 }
 
-.bio-obras .img5{
-    grid-area: Img5;
+.bio-obras .b-img5{
+    grid-area: b-img5;
 }
 
-.bio-obras .img6{
-    grid-area: Img6;
-}
-
-.bio-text{
-    position: absolute;
-    color: var(--primary-color);
-    background-color: #0f0e0e41;
-    padding: 0.5rem;
-
-    left: 10px;
-    top: 10px;
-    font-size: 2rem;
+.bio-obras .b-img6{
+    grid-area: b-img6;
 }
 
 .bio-obras .bio-item{
@@ -313,14 +304,20 @@ section {
     align-items: center;
 }
 
+.bio-btn a:hover{
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 0.25rem solid var(--accent-color);
+}
+
 .bio-btn a{
     text-decoration: none;
-    background-color: transparent;
-    color: var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--bg-color);
     border-radius: 2rem;
     padding: 1rem;
     font-size: 2rem;
-    border: 0.25rem solid var(--primary-color);
+    border: 0.25rem solid var(--accent-color);
 }
 
 /* Contenedor principal de la prensa. */
