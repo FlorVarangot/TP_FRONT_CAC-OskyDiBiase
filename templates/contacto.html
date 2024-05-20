@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'
+        rel='stylesheet' type='text/css'>
     <!-- Open Sans -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
     <!-- Montserrat -->
@@ -13,12 +15,12 @@
     <!-- Lato -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-<!-- CSS Externo: -->
+    <!-- CSS Externo: -->
     <link rel="stylesheet" href="../static/css/style.css">
 
-<!-- Favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="../static/img/OskyFavicon.ico">
-<!-- Font awesome -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <title>OSKY DI BIASE</title>
@@ -27,34 +29,36 @@
 
 <body>
     <!-- ENCABEZADO -->
-    <header class="header">     
-        <!-- Logo -->  
-            <div id="logo">        
-                <a href="../index.html">
+    <header class="header">
+        <!-- Logo -->
+        <div id="logo">
+            <a href="../index.html">
                 <img src="../static/img/imglogo.jpg" alt="imglogo">
-                </a>
+            </a>
+        </div>
+
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar">
+            <div class="nav-links">
+                <!-- Hipervinculos -->
+                <ul>
+                    <li><a href="../templates/portfolio.html">Portfolio</a></li>
+                    <li><a href="../templates/bio.html">Sobre mí</a></li>
+                    <li><a href="../templates/prensa.html">Prensa</a></li>
+                </ul>
             </div>
-           
-          <!-- BARRA DE NAVEGACION -->
-         <nav class="navbar">
-                <div class="nav-links">
-                 <!-- Hipervinculos -->
-                    <ul>                    
-                       <li><a href="../templates/portfolio.html">Portfolio</a></li> 
-                       <li><a href="../templates/bio.html">Sobre mí</a></li>  
-                       <li><a href="../templates/prensa.html">Prensa</a></li>
-                    </ul> 
-                </div>
         </nav>
     </header>
 
     <main>
-        
+
         <section id="form-wrapper">
             <fieldset id="cajaContacto">
                 <!-- Logo para la caja de contacto -->
                 <img class="logoContacto" src="../static/img/LogoS.jpg" alt="Logo de contacto">
-                <legend class="tituloContacto"><h2>Contacto</h2></legend>
+                <legend class="tituloContacto">
+                    <h2>Contacto</h2>
+                </legend>
                 <h3>
                     <form action="#" id="formRegister" method="get" novalidate onsubmit="return validarFormulario()">
                         <div class="form-control">
@@ -68,76 +72,76 @@
                             <label class="tituloContacto">Apellido
                                 <input type="text" required name="lastname" id="lastname">
                             </label>
-                        </div>    
-                        <div class="error" id="error-lastname"></div>  
+                        </div>
+                        <div class="error" id="error-lastname"></div>
                         <br>
-                    <div class="form-control">
-                        <label class="tituloContacto" for="email">Email
-                            <input type="email" required name="email" id="email">
-                        </label>
-                    </div>
-                    <br>
-                    <div>
-                        <label class="tituloContacto" for="asuntos">Asunto:
-                            <input type="checkbox">Contrataciones
-                            <input type="checkbox">Cuadros
-                            <input type="checkbox" >Murales
-                            <input type="checkbox">Eventos
-                            <input type="checkbox">Otros
-                        </label>
-                    </div>
-                    <br>
-                    <div>
-                        <label class="tituloContacto" for="foto">Adjunte una fóto
-                            <input type="file">
-                        </label>
-                    </div>
-                    <br>
-                    <div class="form-control">
-                        <label class="tituloContacto" for="Comentarios">Comentarios</label>
+                        <div class="form-control">
+                            <label class="tituloContacto" for="email">Email
+                                <input type="email" required name="email" id="email">
+                            </label>
+                        </div>
                         <br>
-                        <textarea name="comentarios" id="comentarios" 
-                        rows="3" cols="50" placeholder="Deje sus comentarios aquí..."></textarea>
-                    </div>
-                    <div>
-                        <input class="tituloContacto" style="font-size: 20px;" type="submit" value="Enviar">
-                    </div>
+                        <div>
+                            <label class="tituloContacto" for="asuntos">Asunto:
+                                <input type="checkbox">Contrataciones
+                                <input type="checkbox">Cuadros
+                                <input type="checkbox">Murales
+                                <input type="checkbox">Eventos
+                                <input type="checkbox">Otros
+                            </label>
+                        </div>
+                        <br>
+                        <div>
+                            <label class="tituloContacto" for="foto">Adjunte una fóto
+                                <input type="file">
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-control">
+                            <label class="tituloContacto" for="Comentarios">Comentarios</label>
+                            <br>
+                            <textarea name="comentarios" id="comentarios" rows="3" cols="50"
+                                placeholder="Deje sus comentarios aquí..."></textarea>
+                        </div>
+                        <div>
+                            <input class="tituloContacto" style="font-size: 20px;" type="submit" value="Enviar">
+                        </div>
                     </form>
                 </h3>
             </fieldset>
         </section>
-        
+
         <script src="../static/js/validacion.js"></script>
     </main>
-    
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <div class="footer">
-        <ul>
-            <li>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
-            </li>
-            <li>
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/oskydibiasearte/" target="_blank">@oskydibiasearte</a>
-            </li>
-            <li>
-                <i class="fa-brands fa-facebook-f"></i>
-                <a href="https://www.facebook.com/osky.dibiase/" target="_blank">/oskydibiasearte</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
-            </li>
 
-            <li>          
-              <p><b>Todos los derechos reservados.</b></p>      
-              <p><b>© 2024 Osky Di Biase</b></p>
-            </li>
-        </ul>
-    </div>
-  </footer>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/oskydibiasearte/" target="_blank">@oskydibiasearte</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <a href="https://www.facebook.com/osky.dibiase/" target="_blank">/oskydibiasearte</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
+                </li>
+
+                <li>
+                    <p><b>Todos los derechos reservados.</b></p>
+                    <p><b>© 2024 Osky Di Biase</b></p>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
