@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #202020;
+    --bg-color: black;
     --primary-color: #d1d1d1;
     --secondary-color: #e63946;
     --third-color: #f1faee;
@@ -144,8 +144,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    align-items: center;
-    background-color: var(--secondary-color);
+    align-items: center;;
 }
 
 .main {
@@ -541,60 +540,6 @@ figure {
     padding: 20px;
 }
 
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    border: 3px solid rgba(160, 197, 59, 0.822);
-    object-position: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-
-    background-color: var(--accent-color);
-    object-position: center;
-    justify-content: center;
-}
-
-.footer p {
-    color: var(--third-color);
-    font-style: italic;
-    font-size: 14px;
-}
-
-
-
-.footer ul {
-    list-style: none;
-    padding-top: 20px;
-    object-position: center;
-
-}
-
-.footer li {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.footer i {
-
-    display: inline-block;
-    /* vertical-align: middle; */
-    width: 20px;
-    height: auto;
-    cursor: pointer;
-
-
-}
-
-.footer a {
-    margin-left: 10px;
-    text-decoration: none;
-}
-
 
 
 @media screen and (min-width: 800px) {
@@ -632,50 +577,7 @@ figure {
 
 /* --------- FIN CSS PRENSA.HTML --------- */
 
-/* #footer {
-    background-color: var(--bg-input-color);
-    display: flex;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
-#footer a {
-    color: var(--primary-color);
-    cursor: pointer;
-    font-size: 18px;
-}
-
-#footer p {
-    font-size: 15px;
-    font-style: italic;
-}
-
-#footer a:hover {
-    text-decoration: underline;
-    color: var(--secondary-color);
-}
-
-#footer ul {
-    list-style-type: none;
-}
-
-#footer .content {
-    padding: 30px 0 0px;
-    margin: 0 0 30px;
-}
-
-#footer .social {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    margin: 0 0 20px;
-}
-
-#footer .social li {
-    padding: 0 10px;
-} */
 
 #header img {
     height: 20px;
@@ -734,18 +636,15 @@ figure {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
     padding-bottom: 20px;
     background: linear-gradient(rgba(37, 39, 41, 0.8), rgba(15, 14, 15, 0.8));
-    /* border: 3px solid rgb(218, 207, 66); */
 }
 
 /* formato de imagenes del portfolio */
 #lista-portfolio img {
-    width: 200x;
-    height: 200px;
+    width: 220px;
+    height: 280px;
     object-fit: cover;
-    object-position: center;
     padding: 6px;
 }
 
@@ -768,8 +667,6 @@ figure {
 
 /* Defino la vista de las cartillas de noticias */
 
-
-
 *,
 *::before,
 *::after {
@@ -784,18 +681,23 @@ figure {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-color: #000000;
 
 }
 #contacto ul{
-
     background-color:transparent;
     padding-bottom: 20px;
     list-style-type: none;
 }
-#contacto img {
 
-    width: 150px;
-    border-radius: 5%;
+#contacto li{
+    margin:20px;
+    padding: 10;
+    font-size: medium;
+}
+#contacto img {
+    width: 180px;
+    border-radius: 70%;
 }
 
 #contacto p {
@@ -877,7 +779,6 @@ padding-top: 20%;
 
 /* Estilo de subtitulos que separan las categorias "murales" cuadros otros */
 .banner-subtitulos {
-
     max-width: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -1111,6 +1012,58 @@ body {
 .github-link:visited {
     color: #fff;
     text-decoration: none;
+}
+
+.footer {
+    background-color: var(--bg-input-color);
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-top: 20px;
+    object-position: center;
+}
+
+.footer p {
+    color: var(--primary-color);
+    font-style: italic;
+    font-size: 14px;
+    margin:10px;
+}
+
+.footer a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0 0 20px;
+}
+
+.content {
+    padding: 30px 0 0px;
+    margin: 0 0 30px;
+}
+
+.social li {
+    padding: 0 10px;
 }
 
 /* FIN GALERIA (LEO) */
