@@ -344,7 +344,7 @@ figure {
 .container-prensa {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    /* justify-content: center; */
     max-width: 700px;
     margin-block: 2rem;
     gap: 2rem;
@@ -1034,14 +1034,8 @@ padding-top: 20%;
 
 .social {
     display: flex;
-    justify-content: center;
     font-size: 15px;
-    margin: 0 0 20px;
-}
-
-.content {
-    padding: 30px 0 0px;
-    margin: 0 0 30px;
+    margin: 20px;
 }
 
 .social li {
