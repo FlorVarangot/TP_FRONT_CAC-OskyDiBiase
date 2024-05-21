@@ -140,12 +140,13 @@ figure {
     color: var(--primary-color);
     padding: 8px;
     padding: 14px 16px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .nav-links a:hover {
     text-decoration: none;
     color: var(--secondary-color);
+    transform: scale(1.25);
 }
 
 .nav-links li:hover {
@@ -181,20 +182,28 @@ figure {
 }
 
 .btn-contacto {
-    
     background-color: var(--accent-color);
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
-    color: var(--bg-color);
     cursor: pointer;
     text-decoration: none;
-    font-size:large; color: white;
-   
+    font-size: large;
 }
 
-.btn-contacto:hover {
-    color: var(--secondary color) !important;
-    border: 2px solid var(--primary-color);
+.container-btn a{
+    color: black;
+}
+
+.btn-contacto a{
+    color: black;
+}
+
+.btn-contacto:hover{
+    transform: scale(1.05);
+}
+
+.container-btn:hover{
+    transform: scale(1.05);
 }
 
 /* Estilo para la tarjeta del banner */
@@ -449,8 +458,8 @@ figure {
 }
 
 .article-p {
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: lightgray;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #666;
     display: flex;
     flex: 1;
@@ -539,7 +548,8 @@ figure {
 }
 
 .video-iframe {
-    background-color: var(--secondary-color)
+    background-color: lightslategray;
+    color:#333;
 }
 
 .contacto-prensa {
@@ -561,9 +571,10 @@ figure {
 @media screen and (min-width: 1000px) {
     .primer-article {
         flex-direction: row;
+        padding: 10px;
     }
 
-    .primer-article .article-body-p {
+    .article-body-p {
         flex: 1;
     }
 
