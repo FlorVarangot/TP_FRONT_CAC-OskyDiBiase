@@ -18,7 +18,7 @@ function validarFormulario() {
 //   Imagenes caja contacto
 document.addEventListener('DOMContentLoaded', function() {
     var cajaContacto = document.getElementById('cajaContacto');
-    var imagenes = ['/static/img/Contacto/1.jpg', '/static/img/Contacto/2.jpg', '/static/img/Contacto/3.jpg', '/static/img/Contacto/4.jpg']; // Lista de imágenes a mostrar
+    var imagenes = ['../static/img/Contacto/1.jpg', '../static/img/Contacto/2.jpg', '../static/img/Contacto/3.jpg', '../static/img/Contacto/4.jpg']; // Lista de imágenes a mostrar
     var tiempoEntreCambio = 3000; // Tiempo en milisegundos entre cada cambio 
     var indice = 0;
 
