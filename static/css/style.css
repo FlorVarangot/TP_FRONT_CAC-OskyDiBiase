@@ -115,6 +115,7 @@ figure {
     background-color: transparent;
     width: 100%;
     place-content: center;
+    overflow: hidden;
 }
 
 .nav-links {
@@ -558,46 +559,6 @@ figure {
     padding: 20px;
 }
 
-
-
-@media screen and (min-width: 800px) {
-
-    .columnas-prensa,
-    .columna-prensa {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .primer-article {
-        flex-direction: row;
-        padding: 10px;
-    }
-
-    .article-body-p {
-        flex: 1;
-    }
-
-    .primer-article .article-image-p {
-        height: 300px;
-        order: 2;
-        padding-top: 0;
-        width: 400px;
-    }
-
-    .main-columna {
-        flex: 3;
-    }
-
-    .nested {
-        flex: 2;
-    }
-}
-
-/* --------- FIN CSS PRENSA.HTML --------- */
-
-
-
 #header img {
     height: 20px;
     width: auto;
@@ -622,7 +583,7 @@ figure {
     background-size: contain;
     background-color: transparent;
     background-position: center;
-    height: 215px;
+    height: 250px;
     box-shadow: inset 0 0 0 2000px rgba(34, 34, 34, 0.5);
     margin: 50px, 0, 50px, 0;
     justify-content: center;
@@ -1008,7 +969,8 @@ padding-top: 20%;
 }
 
 .footer {
-    background-color: var(--bg-input-color);
+    /* background-color: var(--bg-input-color); */
+    background: linear-gradient(rgba(110, 113, 116, 0.8), rgba(53, 60, 87, 0.8));
     display: flex;
     height: 200px;
     width: 100%;
@@ -1051,4 +1013,140 @@ padding-top: 20%;
 
 .social li {
     padding: 0 10px;
+}
+
+/* Media Queries generales para que sea responsive */
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    
+    h1{
+        font-size: 1vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+
+    h3,
+    p {
+        font-size: 5vw;
+    }
+
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    .flexbox-container {
+        max-width: 420px;
+    }
+
+    .container-nombre {
+        padding: 0px 50px;
+    }
+
+    .btn-contacto {
+        font-size: 1vh;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a {
+        padding: 2px 0px;
+    }
+}
+
+/* Pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h1{
+        font-size: 1vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+
+    h3,
+    p {
+        font-size: 5vw;
+    }
+
+
+    #banner {
+        height: 400px;
+    }
+
+    /* .flexbox-container {
+        max-width: 720px;
+    } */
+
+    .container-nombre {
+        padding: 0px 75px;
+    }
+
+    .columnas-prensa,
+    .columna-prensa {
+        display: flex;
+    }
+
+    .primer-article {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .article-body-p {
+        flex: 1;
+    }
+
+    .primer-article .article-image-p {
+        height: 300px;
+        order: 2;
+        padding-top: 0;
+        width: 400px;
+    }
+
+    .main-columna {
+        flex: 3;
+    }
+
+    .nested {
+        flex: 2;
+    }
+
+    #portfolio,
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Pantallas grandes */
+@media screen and (min-width: 1920px) {
+    h1{
+        font-size: 1vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+
+    h3,
+    p {
+        font-size: 5vw;
+    }
+
+    .flexbox-container {
+     
+    }
+
 }
