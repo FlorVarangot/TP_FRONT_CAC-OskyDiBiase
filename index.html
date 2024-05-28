@@ -59,16 +59,17 @@
   <div class="flexbox-container">
     <div class="main">
       <!-- Banner -->
-      <section id="nombre">
+      <section id="banner-principal">
         <div class="container-nombre">
           <h1>OSKY DI BIASE</h1>
           <h2>Muralista | Mosaiquista</h2>
           <h3>"El muralista del rock"</h3>
         </div>
       </section>
-
-      <div class="container-btn">
-        <a href="./templates/contacto.html" class="btn-contacto">Contactame</a>
+      <div class="contain-flex-btn-contacto">
+        <div class="contact-btn">
+          <a href="./templates/contacto.html" class="btn-contacto">Contactame</a>
+        </div>
       </div>
 
       <!-- Sobre mí -->
@@ -97,10 +98,7 @@
 
       <!-- Trabajos / Portfolio -->
       <section id="portfolio">
-        <div>
-          <div>
-            <h1 class="banner-subtitulos">PORTFOLIO</h1>
-          </div>
+          <h1 class="banner-subtitulos">PORTFOLIO</h1>
           <div id="lista-portfolio">
             <a href="./static/img/Galeria/Porfolio-M-La_hija_del_rock.jpg" target="_blank">
               <img src="./static/img/Galeria/Porfolio-M-La_hija_del_rock.jpg" alt="La hija del rock" width="100"
@@ -134,7 +132,7 @@
             </a>
           </div>
 
-          <div id="lista-portfolio">
+          <!-- <div id="lista-portfolio">
             <a href="./static/img/Galeria/Porfolio-C-Un_Tal_Julio.jpg" target="_blank">
               <img src="./static/img/Galeria/Porfolio-C-Un_Tal_Julio.jpg" alt="Un tal julio" width="100" height="100">
             </a>
@@ -166,7 +164,7 @@
               <img src="./static/img/Galeria/Portfolio-C-Ojos_de_ciudad.jpg" alt="Ojos de ciudad" width="100"
                 height="100">
             </a>
-          </div>
+          </div> -->
 
           <div>
             <button class="btn-contacto">
@@ -218,16 +216,19 @@
             </div>
             <div class="card__footer">01 de septiembre de 2023</div>
           </div>
+
         </div>
+
+
       </section>
+
       <button class="btn-contacto">
         <a href="./templates/prensa.html">Ir a Prensa</a>
       </button>
-
-      
       <!-- Contacto -->
-      <h1 class="banner-subtitulos">CONTACTO</h1>
+ 
       <section id="contacto">
+        <h1 class="banner-subtitulos">CONTACTO</h1>
         <ul>
           <li>
               <div class="fakeimg">
@@ -251,39 +252,37 @@
     
         <!-- Fin class flexbox -->
   </div>
-  </main>
-
-
-      <!-- PIE DE PÁGINA -->
-      <footer>
-        <div class="footer">
-          <div>
-            <ul class="social">
-              <li>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
-              </li>
-              <li>
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/oskydibiasearte/" target="_blank">@oskydibiasearte</a>
-              </li>
-              <li>
-                <i class="fa-brands fa-facebook-f"></i>
-                <a href="https://www.facebook.com/osky.dibiase/" target="_blank">/oskydibiasearte</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
-              </li>
-            </ul>
-            <hr>
-            <p><b>Todos los derechos reservados.</b></p>
-            <p><b>© 2024 Osky Di Biase</b></p>
-          </div>
-        </div>
-      </footer>
-      
+  </main>    
 </body>
+<footer>
+  <div class="footer">
+    <div class="content">
+      <ul class="social">
+        <li>
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <a href="tel:+5491157213535" target="_blank">+54 9 11 5721 3535</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/oskydibiasearte/" target="_blank">@oskydibiasearte</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-facebook-f"></i>
+          <a href="https://www.facebook.com/osky.dibiase/" target="_blank">/oskydibiasearte</a>
+        </li>
+        <li>
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:oskydibiasearte@gmail.com" target="_blank">oskydibiasearte@gmail.com</a>
+        </li>
+      </ul>
+      <div class="copywrite">
+          <p>Todos los derechos reservados.</p>
+          <p>© 2024 Osky Di Biase</p>          
+      </div>
+   
+    </div>
+  </div>
+</footer>
 
 
 </html>
