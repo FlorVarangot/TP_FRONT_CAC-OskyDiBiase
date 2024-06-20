@@ -1015,138 +1015,9 @@ padding-top: 20%;
     padding: 0 10px;
 }
 
-/*-------MEDIA QUERIES(Estefania)------------
-CELULAR
-@media screen and (max-width: 767px){
-    /*CLASES PARA LA BIOGRAFIA*/
-    /* .bio-box,
-    .bio-artist div {
-        padding: 0;
-        margin: 0.25rem 2rem;
-    }
-
-    .bio-artist h2,
-    .bio-obra h3 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .bio-artist p,
-    .bio-obra p {
-        font-size: 0.9rem;
-    }
-
-    .bio-obra img,
-    .b-imgRight {
-        max-width: 300px;
-        margin: 0 1.25rem 1.25rem 1rem;
-    }
-
-    .bio-obra h2 {
-        font-size: 2.5rem;
-    }
-
-    .b-imgLeft {
-        max-width: 300px;
-        margin: 0 1rem 1.25rem 0;
-    }
-    BIOFRAFIA - boton para llevar al portfolio  
-    .bio-btn a {
-        font-size: 1rem;
-    }
-    Grid para mostrar imagenes de osky realizando sus obras
-    .bio-obras {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px 300px 300px;
-        grid-template-areas:
-            'b-img3 b-img3'
-            'b-img2 b-img1'
-            'b-img4 b-img5'
-            'b-img6 b-img5';
-        grid-gap: 1rem;
-        padding: 1rem 2.5rem;
-        max-width: 100vh;
-    }
-    CLASES PARA EL FOOTER
-    .footer{
-        height: auto;
-    }
-    .footer a {
-        font-size: 14px;
-    }
-    .footer ul{
-        padding: 0;
-    }
-    .footer p{
-        margin: 0;
-        padding: 0.5rem;
-    }
-    .social {
-        display: block;
-    }
-    caja prinicipal de contacto 
-    #contacto img {
-        width: 80px;
-    }
-    #contacto p {
-        font-size: 1rem;
-    }
-    Estilo de subtitulos que separan las categorias "murales" cuadros otros 
-    .banner-subtitulos {
-        font-size: large;
-    }
-}
-
-TABLETS
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    CLASES PARA LA BIOGRAFIA
-    .bio-box,
-    .bio-artist div {
-        padding: 0;
-        margin: 2rem;
-    }
-
-    .bio-artist h2,
-    .bio-obra h3 {
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .bio-artist p,
-    .bio-obra p {
-        font-size: 1.15rem;
-    }
-
-    .bio-obra img,
-    .b-imgRight {
-        margin: 1.25rem;
-    }
-
-    .bio-obra h2 {
-        font-size: 3.5rem;
-    }
-    BIOFRAFIA - boton para llevar al portfolio 
-    .bio-btn a {
-        font-size: 1.5rem;
-    }
-    Grid para mostrar imagenes de osky realizando sus obras
-    .bio-obras {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 400px 400px 400px 400px;
-        grid-template-areas:
-            'b-img3 b-img3'
-            'b-img2 b-img1'
-            'b-img4 b-img5'
-            'b-img6 b-img5';
-        grid-gap: 1rem;
-        padding: 1rem 2.5rem;
-        
-    }
-}
-*/
 /* Media Queries generales para que sea responsive */
 
-/* Pantallas pequeñas */
+/* Pantallas pequeñas(celulares) */
 @media screen and (max-width: 767px) {
     
     h1{
@@ -1182,18 +1053,93 @@ TABLETS
         font-size: 1vh;
     }
 
+    /*CLASES PARA LA BIOGRAFIA*/
+    .bio-box,
+    .bio-artist div {
+        padding: 0;
+        margin: 0.25rem 2rem;
+    }
+    .bio-artist h2,
+    .bio-obra h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .bio-artist p,
+    .bio-obra p {
+        font-size: 0.9rem;
+    }
+    .bio-obra img,
+    .b-imgRight {
+        max-width: 350px;
+        margin: 0 1.25rem 1.25rem 1rem;
+    }
+    .bio-obra h2 {
+        font-size: 2.5rem;
+    }
+    .b-imgLeft {
+        max-width: 350px;
+        margin: 0 1rem 1.25rem 0;
+    }
+
+    /* BIOFRAFIA - boton para llevar al portfolio   */
+    .bio-btn a {
+        font-size: 1rem;
+    }
+
+    /* Grid para mostrar imagenes de osky realizando sus obras */
+    .bio-obras {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-areas:
+            'b-img3 b-img3'
+            'b-img2 b-img1'
+            'b-img4 b-img5'
+            'b-img6 b-img5';
+        grid-gap: 1rem;
+        padding: 1rem 2.5rem;
+        max-width: 100vh;
+    }
+
+    /* caja prinicipal de contacto  */
+    #contacto img {
+        width: 80px;
+    }
+    #contacto p {
+        font-size: 1rem;
+    }
+    /* Estilo de subtitulos que separan las categorias "murales" cuadros otros  */
+    .banner-subtitulos {
+        font-size: large;
+    }
+
+    /* CLASES PARA EL FOOTER */
+    .footer{
+        height: auto;
+    }
+    .footer a {
+        font-size: 14px;
+    }
+    .footer ul{
+        padding: 0;
+    }
+    .footer p{
+        margin: 0;
+        padding: 0.5rem;
+    }
+    .social {
+        display: block;
+    }
     #footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
     #footer a {
         padding: 2px 0px;
     }
 }
 
-/* Pantallas medianas */
+/* Pantallas medianas(tablets) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     h1{
         font-size: 1vw;
@@ -1205,7 +1151,7 @@ TABLETS
 
     h3,
     p {
-        font-size: 5vw;
+        font-size: 2.8vw;
     }
 
 
@@ -1256,10 +1202,55 @@ TABLETS
         align-items: center;
         justify-content: center;
     }
+
+    /* CLASES PARA LA BIOGRAFIA */
+    .bio-box,
+    .bio-artist div {
+        padding: 0;
+        margin: 2rem;
+    }
+
+    .bio-artist h2,
+    .bio-obra h3 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .bio-artist p,
+    .bio-obra p {
+        font-size: 1.15rem;
+    }
+
+    .bio-obra img,
+    .b-imgRight {
+        margin: 1.25rem;
+    }
+
+    .bio-obra h2 {
+        font-size: 3.5rem;
+    }
+
+    /* BIOFRAFIA - boton para llevar al portfolio  */
+    .bio-btn a {
+        font-size: 1.5rem;
+    }
+    /* Grid para mostrar imagenes de osky realizando sus obras */
+    .bio-obras {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-areas:
+            'b-img3 b-img3'
+            'b-img2 b-img1'
+            'b-img4 b-img5'
+            'b-img6 b-img5';
+        grid-gap: 1rem;
+        padding: 1rem 2.5rem;
+        
+    }
 }
 
 
-/* Pantallas grandes */
+/* Pantallas grandes 
 @media screen and (min-width: 1920px) {
     h1{
         font-size: 1vw;
@@ -1274,4 +1265,4 @@ TABLETS
         font-size: 5vw;
     }
 
-}
+}*/
