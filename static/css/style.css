@@ -1015,11 +1015,11 @@ padding-top: 20%;
     padding: 0 10px;
 }
 
-/*-------MEDIA QUERIES------------*/
-/*CELULAR*/
+/*-------MEDIA QUERIES(Estefania)------------
+CELULAR
 @media screen and (max-width: 767px){
-    /* CLASES PARA LA BIOGRAFIA*/
-    .bio-box,
+    /*CLASES PARA LA BIOGRAFIA*/
+    /* .bio-box,
     .bio-artist div {
         padding: 0;
         margin: 0.25rem 2rem;
@@ -1050,11 +1050,11 @@ padding-top: 20%;
         max-width: 300px;
         margin: 0 1rem 1.25rem 0;
     }
-    /*BIOFRAFIA - boton para llevar al portfolio  */
+    BIOFRAFIA - boton para llevar al portfolio  
     .bio-btn a {
         font-size: 1rem;
     }
-    /*Grid para mostrar imagenes de osky realizando sus obras*/
+    Grid para mostrar imagenes de osky realizando sus obras
     .bio-obras {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 300px 300px 300px;
@@ -1067,7 +1067,7 @@ padding-top: 20%;
         padding: 1rem 2.5rem;
         max-width: 100vh;
     }
-    /*CLASES PARA EL FOOTER*/
+    CLASES PARA EL FOOTER
     .footer{
         height: auto;
     }
@@ -1084,22 +1084,22 @@ padding-top: 20%;
     .social {
         display: block;
     }
-    /* caja prinicipal de contacto */
+    caja prinicipal de contacto 
     #contacto img {
         width: 80px;
     }
     #contacto p {
         font-size: 1rem;
     }
-    /* Estilo de subtitulos que separan las categorias "murales" cuadros otros */
+    Estilo de subtitulos que separan las categorias "murales" cuadros otros 
     .banner-subtitulos {
         font-size: large;
     }
 }
 
-/*TABLETS*/
+TABLETS
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    /* CLASES PARA LA BIOGRAFIA*/
+    CLASES PARA LA BIOGRAFIA
     .bio-box,
     .bio-artist div {
         padding: 0;
@@ -1125,11 +1125,11 @@ padding-top: 20%;
     .bio-obra h2 {
         font-size: 3.5rem;
     }
-    /*BIOFRAFIA - boton para llevar al portfolio  */
+    BIOFRAFIA - boton para llevar al portfolio 
     .bio-btn a {
         font-size: 1.5rem;
     }
-    /*Grid para mostrar imagenes de osky realizando sus obras*/
+    Grid para mostrar imagenes de osky realizando sus obras
     .bio-obras {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 400px 400px 400px 400px;
@@ -1143,7 +1143,7 @@ padding-top: 20%;
         
     }
 }
-
+*/
 /* Media Queries generales para que sea responsive */
 
 /* Pantallas pequeñas */
@@ -1272,10 +1272,6 @@ padding-top: 20%;
     h3,
     p {
         font-size: 5vw;
-    }
-
-    .flexbox-container {
-     
     }
 
 }
